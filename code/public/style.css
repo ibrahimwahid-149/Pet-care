@@ -1,0 +1,248 @@
+/* Page styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  /* Background image covering full screen */
+  background-image: url("../image/background.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow-y: auto;
+  color: #333;
+}
+
+/* header and navigation bar*/
+header {
+  background: rgba(255, 179, 71, 0.9);
+  /* A transparent orange color for header */
+  color: #fff;
+  text-align: center;
+  /*In the middle of the screen*/
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  /* Shadow for the box */
+}
+
+/* Button for the navigation bar */
+nav button {
+  background-color: #fff;
+  /*Buuton are white */
+  color: orange;
+  /* text colour */
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+  /* Change cursor when hovering over button */
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+/* Button will change colour when hovering over it */
+nav button:hover {
+  background-color: #ffe0b2;
+}
+
+/* Main content */
+main {
+  max-width: 800px;
+  /*keeps the content in the center*/
+  margin: 20px auto;
+  background: rgba(255, 255, 255, 0.85);
+  /*Transparent white background*/
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  /* Shadow for box */
+}
+
+/* Hide all the sections until user logs in*/
+section {
+  display: none;
+}
+
+/*Active section of web will be shown*/
+section.active {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Will hide all the other main sections */
+main section {
+  display: none;
+}
+
+/* register section will be visible once opened */
+#registerSection {
+  display: block;
+}
+
+/* Headings and elements */
+h2 {
+  color: orangered;
+  text-align: center;
+}
+
+/* Allows users to type in their input */
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border: 1px solid gray;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+/* These form submit buttons */
+button.action {
+  width: 100%;
+  background-color: #ff9800;
+  /* Colour of the buttons */
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  /* cursor will change */
+  transition: 0.3s;
+}
+
+/* Will change to that colour when activated */
+button.action:hover {
+  background-color: #ffb347;
+}
+
+/* Post and feed page */
+.post {
+  background: rgba(255, 255, 255, 0.9);
+  /* They posts will have a white background */
+  border-radius: 15px;
+  padding: 15px;
+  margin: 15px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Post images */
+.post img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* The searching web page */
+#searchResults p {
+  background: white;
+  /* Will have a white background */
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+/* Users profile page */
+.profile-panel {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.97);
+  /* will have a white background */
+  padding: 15px 20px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+/* User info (left side) */
+.profile-info {
+  font-size: 18px;
+}
+
+/* Profile pic (right side) */
+.profile-photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-photo img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  /* Circle */
+  object-fit: cover;
+  /* stops oval stretching */
+  border: 3px solid orange;
+}
+
+/* Move file picker under photo */
+.profile-file-input {
+  margin-top: 10px;
+}
+
+/* Extra spacing for post images */
+.post img {
+  margin-top: 10px;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+/* Post header containing user info */
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+/* Post profile picture */
+.post-pfp {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid orange;
+}
+
+/* Username text inside posts */
+.post-username {
+  font-size: 16px;
+  color: black;
+}
+
+/* User search card styling */
+.user-card {
+  background: white;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons inside user cards */
+.user-card button {
+  margin-right: 10px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Follow and unfollow message text */
+.followMsg {
+  margin-top: 5px;
+  font-size: 14px;
+}

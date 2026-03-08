@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pet-Care</title>
+  <!--Link to the CSS page-->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <!--Title of the webpage-->
+    <h1>Pet-Care</h1>
+    <!--Navigation bar-->
+    <nav id="navbar">
+      <button id="registerBtn">Register</button>
+      <button id="loginBtn">Login</button>
+      <!--These will remain hidden until login-->
+      <button id="feedBtn" class="hidden">Feed</button>
+      <button id="uploadBtn" class="hidden">Upload</button>
+      <button id="searchBtn" class="hidden">Search</button>
+      <button id="profileBtn" class="hidden">Profile</button>
+      <button id="logoutBtn" class="hidden">Logout</button>
+      <button id="petDataBtn" class="hidden">Pet Facts</button>
+    </nav>
+  </header>
+
+  <!--The profile page includes the username and email-->
+  <div id="profilePanel" class="profile-panel hidden">
+    <p><strong>Username:</strong> <span id="profileUsername"></span></p>
+    <p><strong>Email:</strong> <span id="profileEmail"></span></p>
+    <p><strong>Following:</strong> <span id="followingCount"></span></p>
+    <!--Log out button-->
+    <button id="logoutFromProfile">Logout</button>
+  </div>
+
+  <main>
+
+    <!--Register page-->
+    <section id="registerSection" class="active">
+      <h2>Register</h2>
+      <!--Username-->
+      <label for="regUsername">Username:</label>
+      <input type="text" id="regUsername" />
+      <!--Email-->
+      <label for="regEmail">Email:</label>
+      <input type="email" id="regEmail" />
+      <!--Password-->
+      <label for="regPassword">Password:</label>
+      <input type="password" id="regPassword" />
+      <!--Pet type (optional)-->
+      <label for="regPet">Pet Type (Optional):</label>
+      <input type="text" id="regPet" />
+      <!--Register button-->
+      <button class="action" onclick="registerUser()">Register</button>
+      <p id="registerMsg"></p>
+    </section>
+
+    <!--Login page-->
+    <section id="loginSection">
+      <h2>Login</h2>
+      <!--Email-->
+      <label for="loginEmail">Email:</label>
+      <input type="email" id="loginEmail" />
+      <!--Register-->
+      <label for="loginPassword">Password:</label>
+      <input type="password" id="loginPassword" />
+      <!--Login button-->
+      <button class="action" onclick="loginUser()">Login</button>
+      <p id="loginMsg"></p>
+    </section>
+
+    <!--The feed page (where users see posts)-->
+    <section id="feedSection">
+      <h2>For you</h2>
+      <div id="feed"></div>
+    </section>
+
+    <!--Uploading page-->
+    <section id="uploadSection">
+      <h2>Share a Pet Post</h2>
+      <textarea id="postText" placeholder="Write something about your pet"></textarea>
+      <input type="file" id="postImage" accept="image/*" />
+      <!--An upload button which can only work if you place an image and text-->
+      <button class="action" onclick="uploadPost()">Upload</button>
+      <p id="uploadMsg"></p>
+    </section>
+
+    <!--Search bar page-->
+    <section id="searchSection">
+      <h2>Find Other Pet Lovers</h2>
+      <input type="text" id="searchInput" placeholder="Search users..." />
+      <!--A search button when click will show users that have the same or similar search-->
+      <button class="action" onclick="searchUsers()">Search</button>
+      <div id="searchResults"></div>
+      <h2>Search Pet Posts</h2>
+      <input type="text" id="postSearchInput" placeholder="Search posts..." />
+      <button class="action" onclick="searchPosts()">Search Posts</button>
+      <div id="postSearchResults"></div>
+    </section>
+
+    <section id="profileSection">
+      <h2>Your Profile</h2>
+
+      <div class="profile-container">
+        <!--Contain info for the users (their username, email and the amount of following users)-->
+        <div class="profile-info">
+          <p><strong>Username:</strong> <span id="profilePageUsername"></span></p>
+          <p><strong>Email:</strong> <span id="profilePageEmail"></span></p>
+          <p><strong>Following:</strong> <span id="followingCount">0</span></p>
+        </div>
+        <!--Select their profile pic (there will be a deafult setting)-->
+        <div class="profile-photo">
+          <img id="profilePic" src="../image/defaultpic.webp" alt="Profile Picture">
+
+          <!-- File selector UNDER the profile pic -->
+          <input type="file" id="profilePicInput" accept="image/*" class="profile-file-input" />
+        </div>
+
+      </div>
+      <!--logout button-->
+      <button class="action" id="logoutFromProfilePage">Logout</button>
+    </section>
+
+    <!--Pet facts page. Will select new fact every time the button is pressed-->
+    <section id="petDataSection">
+      <h2>Pet Facts</h2>
+      <div id="petDataBox" style="margin-top:20px;"></div>
+    </section>
+
+  </main>
+  <!--Link to the java script-->
+  <script src="script.js"></script>
+
+</body>
+
+</html>

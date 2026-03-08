@@ -1,0 +1,130 @@
+[{
+  "_id": {
+    "$oid": "691f71c456c96116fe61f7d0"
+  },
+  "username": "testuser",
+  "email": "test@test.com",
+  "password": "Test123!"
+},
+{
+  "_id": {
+    "$oid": "69204dfa0199c41c3c725850"
+  },
+  "username": "testuser",
+  "email": "test@example.com",
+  "password": "Test123!"
+},
+{
+  "_id": {
+    "$oid": "6920ce2a6fbc385542ec64af"
+  },
+  "username": "testuser",
+  "email": "test@exam.com",
+  "password": "Test123!"
+},
+{
+  "_id": {
+    "$oid": "69219b31239954679ae1bf0c"
+  },
+  "username": "testuser",
+  "email": "testing@example.com",
+  "password": "Test123?"
+},
+{
+  "_id": {
+    "$oid": "69224d15164920e9aac211f3"
+  },
+  "username": "petOwner",
+  "email": "petOwner@email.com",
+  "password": "Test123?"
+},
+{
+  "_id": {
+    "$oid": "6930ca621ec1d9578081bca2"
+  },
+  "username": "Ibby",
+  "email": "ibby@email.com",
+  "password": "Mother06?",
+  "profilePic": "1765500556149-Lunapic1.jpeg"
+},
+{
+  "_id": {
+    "$oid": "6930d0081ec1d9578081bca3"
+  },
+  "username": "Ibby",
+  "email": "test@email.com",
+  "password": "Mother06?"
+},
+{
+  "_id": {
+    "$oid": "6931a3e092203db80e40e343"
+  },
+  "username": "testuser",
+  "email": "test@user.com",
+  "password": "Mother06?"
+},
+{
+  "_id": {
+    "$oid": "6931a41192203db80e40e345"
+  },
+  "username": "testuser",
+  "email": "i@email.com",
+  "password": "Mother06?"
+},
+{
+  "_id": {
+    "$oid": "693484451f6a3d22e72f97e0"
+  },
+  "username": "tom",
+  "email": "tom@email.com",
+  "password": "Tom123?"
+},
+{
+  "_id": {
+    "$oid": "6934b84b66fbc023c05d5ae4"
+  },
+  "username": "sister",
+  "email": "sister@email.com",
+  "password": "Sister123?"
+},
+{
+  "_id": {
+    "$oid": "693b697a7a2af0ccfc1fcbe8"
+  },
+  "username": "Alex",
+  "email": "Alex@email.com",
+  "password": "Alex123?"
+},
+{
+  "_id": {
+    "$oid": "693b69c87a2af0ccfc1fcbe9"
+  },
+  "username": "Bob",
+  "email": "Bob@email.com",
+  "password": "Bob123?"
+},
+{
+  "_id": {
+    "$oid": "693b6adc7a2af0ccfc1fcbea"
+  },
+  "username": "Chloe",
+  "email": "Chloe@email.com",
+  "password": "Chloe123?"
+},
+{
+  "_id": {
+    "$oid": "693b6b5a15072be25b63bfca"
+  },
+  "username": "Daniel",
+  "email": "Daniel@email.com",
+  "password": "Daniel123?"
+},
+{
+  "_id": {
+    "$oid": "693be15e8f628c0449566eda"
+  },
+  "username": "Alan",
+  "email": "Alan@email.com",
+  "password": "Alan123?",
+  "profilePic": null
+}]

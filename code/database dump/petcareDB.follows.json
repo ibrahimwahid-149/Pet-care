@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "69225219164920e9aac211f6"
+  },
+  "follower": "testuser",
+  "target": "petOwner"
+},
+{
+  "_id": {
+    "$oid": "693485d11f6a3d22e72f97e2"
+  },
+  "follower": "tom",
+  "target": "tom"
+},
+{
+  "_id": {
+    "$oid": "6934b87166fbc023c05d5ae5"
+  },
+  "follower": "Ibby",
+  "target": "Ibby"
+},
+{
+  "_id": {
+    "$oid": "6934b87266fbc023c05d5ae6"
+  },
+  "follower": "Ibby",
+  "target": "Ibby"
+},
+{
+  "_id": {
+    "$oid": "693b6786ce67e15ba1f4fbb6"
+  },
+  "follower": "Ibby",
+  "target": "sister"
+},
+{
+  "_id": {
+    "$oid": "693b681f7a2af0ccfc1fcbe5"
+  },
+  "follower": "Ibby",
+  "target": "Ibby"
+},
+{
+  "_id": {
+    "$oid": "693bf0c20aaecf94cc9776f3"
+  },
+  "follower": "Ibby",
+  "target": "tom"
+}]
